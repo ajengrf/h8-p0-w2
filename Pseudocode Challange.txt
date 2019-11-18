@@ -1,0 +1,49 @@
+1. Newton Second Law
+SET massa = 600
+SET percepatan = 2
+
+SET resultan WITH RESULT OF CALCULATE massa * percepatan
+
+DISPLAY resultan
+
+2. Tahun Kabisat
+SET tahun = 2019
+CALCULATE tahun mod 4
+SET hasil1 WITH RESULT OF CALCULATE tahun mod 4
+IF hasil1 equals to 0
+    CALCULATE tahun mod 100
+    SET hasil2 WITH RESULT OF CALCULATE tahun mod 100
+    IF hasil2 equals to 0
+        CALCULATE tahun mod 400
+        SET hasil3 WITH RESULT OF CALCULATE tahun mod 400
+        IF hasil3 equals to 0
+        DISPLAY Tahun Kabisat
+        ELSE
+         DISPLAY Bukan Tahun Kabisat
+    ELSE
+     DISPLAY Tahun Kabisat
+ELSE
+ DISPLAY Bukan Tahun Kabisat
+
+ENDIF
+
+3. Laundry Day
+STORE baju WITH 0
+
+WHILE baju <= 20
+    ADD baju by 1
+ENDWHILE
+
+DISPLAY Nyalakan Mesin Cuci
+
+4. Periksa Kuku
+SET siswa WITH 1
+REPEAT
+
+IF kukusiswa = Panjang
+    PRINT Siswa Dihukum
+ELSE
+    PRINT Siswa Dipuji
+
+UNTIL siswa <= 40
+
